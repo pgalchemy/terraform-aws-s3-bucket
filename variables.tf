@@ -98,3 +98,15 @@ variable "allow_encrypted_uploads_only" {
   default     = false
   description = "Set to `true` to prevent uploads of unencrypted objects to S3 bucket"
 }
+
+variable "custom_bucket_name" {
+  type = bool
+  default = false
+  description = "Set to `true` to use a custom bucket name"
+}
+
+variable "bucket_name" {
+  type = string
+  default = ""
+  description = "Name of S3 bucket"
+}
